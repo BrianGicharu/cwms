@@ -1,0 +1,6 @@
+{
+    "require": {
+        "safaricom/mpesa": "^1.0",
+        "twbs/bootstrap-icons": "^1.10"
+    }
+}

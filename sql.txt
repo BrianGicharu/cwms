@@ -1,0 +1,9 @@
+
+
+Search results
+Free1Cost: 218ms
+
+
+CREATE TRIGGER transaction_insert_trigger AFTER INSERT ON `tblcarwashbooking` FOR EACH ROW BEGIN INSERT INTO `transactions`( `paymentId`, `paymentTypeId`, `customerId`, `serviceType`, `customerName`, `customerEmail`, `customerPhone`, `paymentType`, `cardNo`, `cvv`, `transactionResponse`, `amount`, `date`, `currency`, `status`, `description`, `address` )VALUES ( null, null, null, NEW.packageType, NEW.fullName, null, NEW.mobileNumber, NEW.paymentMode, null, null, null, NEW.paidAmount, NOW(), null, NEW.status, NEW.message, null ); END;
+
+AffectedRows : 0
